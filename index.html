@@ -1,2 +1,337 @@
-테스트
-두번째 테스트
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport"
+		content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+	<title>서부발전 Index (PC)</title>
+	<script src="https://gswelfaremall.com/front-assets/js/jquery-1.9.1.min.js"></script>
+	<script>
+		$(function () {
+			$('.pagelist_wrap tr td:first-child').each(function (index, item) {
+				$(item).text(index + 1);
+			});
+			$('.link a').each(function () {
+				var fulllink = $(this).html();
+				$(this).prop("href", fulllink);
+			});
+		});
+
+	</script>
+	<style>
+		table {
+			border-collapse: collapse;
+			border-spacing: 0px;
+			empty-cells: show;
+			table-layout: fixed
+		}
+
+		caption {
+			visibility: hidden;
+			width: 0;
+			height: 0;
+			margin: 0;
+			padding: 0;
+			font-size: 0;
+			line-height: 0
+		}
+
+		.pagelist_wrap {
+			padding: 20px;
+			font-size: 13px;
+			line-height: 16px;
+		}
+
+		.pagelist_wrap h1 {
+			font-size: 20px;
+			font-weight: 700;
+			margin-bottom: 20px;
+		}
+
+		.pagelist_wrap table {
+			width: 100%;
+			border-bottom: 1px solid #ccc;
+			border-right: 1px solid #ccc;
+		}
+
+		.pagelist_wrap table th {
+			border-top: 1px solid #ccc;
+			border-left: 1px solid #ccc;
+			padding: 10px;
+			background-color: #e2e2e2;
+			font-weight: 700;
+		}
+
+		.pagelist_wrap table td {
+			border-top: 1px solid #ccc;
+			border-left: 1px solid #ccc;
+			padding: 10px;
+		}
+
+		.pagelist_wrap table td.center {
+			text-align: center;
+		}
+
+		.pagelist_wrap table tr td:first-child {
+			text-align: center;
+		}
+
+		.pagelist_wrap table tr.delete td {
+			text-decoration: line-through;
+			color: red;
+		}
+
+		.pagelist_wrap table tr.delete td a {
+			text-decoration: line-through;
+			color: red;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="pagelist_wrap">
+		<h1>서부발전 인트라넷 Index</h1>
+		<ul>
+			<li>1차 서부발전 측에 전달됨 - 06.18</li>
+		</ul>
+		<table>
+			<colgroup>
+				<col style="width:50px;" />
+				<col style="width:200px;" />
+				<col style="width:200px;" />
+				<col style="width:200px;" />
+				<col style="width:300px;" />
+				<col style="width:120px;" />
+				<col style="width:120px;" />
+				<col style="width:120px;" />
+				<col style="*" />
+			</colgroup>
+			<tr>
+				<th>No</th>
+				<th>분류</th>
+				<th>depth01</th>
+				<th>depth02</th>
+				<th>페이지 링크</th>
+				<th>작업완료</th>
+				<th>전달완료</th>
+				<th>최종완료</th>
+				<th>비고</th>
+			</tr>
+			<tr>
+				<td></td>
+				<td rowspan="5">Style Guide</td>
+				<td>버튼 guide</td>
+				<td>배너/헤더/플로팅/푸터</td>
+				<td class="link"><a href="#" target="_blank">guide/00_button.html</a></td>
+				<td class="center">작업중</td>
+				<td class="center">2021.04.29(2차)</td>
+				<td class="center"></td>
+				<td rowspan="5">
+					<p style="color:red;">스타일가이드는 수정내용에 따라 계속 수정중</p>
+					2021.06.01 : 메인 스크립트들 작업<br>
+					2021.06.18 : 메인 작업 완료 및 서부발전에 전달됨<br>
+
+
+
+					2021.06.24 : 포인트 칼라 수정 적용<br>
+					2021.04.28 : popup/form 작업<br>
+					2021.04.29 : breadcrumb 작업완료<br>
+					2021.04.30 : 팝업(상품평작성,1:1문의하기) 작업완료<br>
+					2021.05.06 : 공지팝업 슬라이더<br>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>guide</td>
+				<td>이미지형/목록형/페이징</td>
+				<td class="link"><a href="#" target="_blank">guide/00_unit.html</a></td>
+				<td class="center">작업중</td>
+				<td class="center">2021.04.29(2차)</td>
+				<td class="center"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>탭메뉴 guide</td>
+				<td></td>
+				<td class="link"><a href="#" target="_blank">guide/00_tab.html</a></td>
+				<td class="center">작업중</td>
+				<td class="center">2021.04.29(2차)</td>
+				<td class="center"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>폼 guide</td>
+				<td>Input/Selectbox/textarea/<br>checkbox/radio</td>
+				<td class="link"><a href="#" target="_blank">guide/00_form.html</a></td>
+				<td class="center">작업중</td>
+				<td class="center">2021.04.29(2차)</td>
+				<td class="center"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>팝업 guide</td>
+				<td>메인관련 팝업</td>
+				<td class="link"><a href="#" target="_blank">guide/00_popup.html</a></td>
+				<td class="center">작업중</td>
+				<td class="center">2021.04.29(2차)</td>
+				<td class="center"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>메인</td>
+				<td></td>
+				<td></td>
+				<td class="link"><a href="#" target="_blank">main/001_main.html</a></td>
+				<td class="center">2021.06.18(1차)</td>
+				<td class="center">2021.04.22(1차)</td>
+				<td class="center"></td>
+				<td>카테고리 영역 미완료(3차 전달)</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>board_type1</td>
+				<td></td>
+				<td></td>
+				<td class="link"><a href="#" target="_blank">seobu/board_type1.html</a></td>
+				<td class="center">2021.06.24</td>
+				<td class="center"></td>
+				<td class="center"></td>
+				<td>2021.06.24 : 작업 시작</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>board_5depth</td>
+				<td></td>
+				<td></td>
+				<td class="link"><a href="#" target="_blank">seobu/board_5depth.html</a></td>
+				<td class="center">2021.06.25</td>
+				<td class="center"></td>
+				<td class="center"></td>
+				<td>//</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>board_list</td>
+				<td></td>
+				<td></td>
+				<td class="link"><a href="#" target="_blank">seobu/board_list.html</a></td>
+				<td class="center">2021.06.25</td>
+				<td class="center"></td>
+				<td class="center"></td>
+				<td>//</td>
+			</tr>
+
+
+
+
+
+
+
+
+
+
+			<tr>
+				<td></td>
+				<td rowspan="2">서부마당</td>
+				<td>홍보센터</td>
+				<td>언론보도</td>
+				<td class="link"><a href="#" target="_blank">product/022.html</a></td>
+				<td class="center">2021.06.25</td>
+				<td class="center"></td>
+				<td class="center"></td>
+				<td>2021.05.04 : 스크립트 작업</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>상품상세</td>
+				<td></td>
+				<td class="link"><a href="#" target="_blank"></a></td>
+				<td class="center">작업중</td>
+				<td class="center"></td>
+				<td class="center"></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td rowspan="3">경영정보</td>
+				<td>회사바로알기 목록</td>
+				<td></td>
+				<td class="link"><a href="#" target="_blank">order/030.html</a></td>
+				<td class="center">2021.05.06</td>
+				<td class="center"></td>
+				<td class="center"></td>
+				<td></td>
+			</tr>
+
+			<tr>
+				<td></td>
+				<td>└ 내용보기 - 첨부파일</td>
+				<td></td>
+				<td class="link"><a href="#" target="_blank">order/035.html</a></td>
+				<td class="center">2021.05.04</td>
+				<td class="center"></td>
+				<td class="center"></td>
+				<td>미작업 : 스크립트</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>└ 내용보기 - 첨부파일 없음</td>
+				<td></td>
+				<td class="link"><a href="#" target="_blank">order/037.html</a></td>
+				<td class="center">2021.05.04</td>
+				<td class="center"></td>
+				<td class="center"></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>전략경영</td>
+				<td>사장지시사항</td>
+				<td></td>
+				<td class="link"><a href="#" target="_blank">event/017.html</a></td>
+				<td class="center">2021.04.21</td>
+				<td class="center">2021.04.22(1차)</td>
+				<td class="center"></td>
+				<td>페이지명 변경(018_event.html->017.html)</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>경영정보</td>
+				<td>회사바로알기</td>
+				<td></td>
+				<td class="link"><a href="#" target="_blank">event/017.html</a></td>
+				<td class="center">2021.04.21</td>
+				<td class="center">2021.04.22(1차)</td>
+				<td class="center"></td>
+				<td>페이지명 변경(018_event.html->017.html)</td>
+			</tr>
+
+			<tr>
+				<td></td>
+				<td rowspan="2">푸터메뉴</td>
+				<td>이용약관</td>
+				<td></td>
+				<td class="link"><a href="#" target="_blank">etc/109.html</a></td>
+				<td class="center">2021.05.04</td>
+				<td class="center"></td>
+				<td class="center"></td>
+				<td>페이지만 생성</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>개인정보처리방침</td>
+				<td></td>
+				<td class="link"><a href="#" target="_blank">etc/110.html</a></td>
+				<td class="center">2021.05.04</td>
+				<td class="center"></td>
+				<td class="center"></td>
+				<td>페이지만 생성</td>
+			</tr>
+		</table>
+	</div>
+
+</body>
+
+</html>
